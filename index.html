@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>js 2nd hw</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+    <!-- output -->
+    <div class="container">
+      <h1>Output of addition</h1>
+      <button type="button" class="btn btn-dark" onclick="outPut()">Result</button>
+      <h2 id="op"></h2>
+    </div>
+    <!-- let keyword -->
+    <div class="container">
+      <h1>Let keyword for addition</h1>
+      <button type="button" class="btn btn-dark" onclick="letKey()">Result</button>
+      <h2 id="le"></h2>
+    </div>
+    <!-- js statement -->
+    <div class="container">
+      <h1>JavaScript code blocks are written between { and }</h1>
+      <button type="button" class="btn btn-dark" onclick="codeBlock()">Result</button>
+      <h2 id="cb1"></h2>
+      <h2 id="cb2"></h2>
+    </div>
+    <!-- js data type -->
+    <div class="container">
+      <h1>JavaScript Datatype</h1>
+      <button type="button" class="btn btn-dark" onclick="dType()">Result</button>
+      <h2 id="dt"></h2>
+    </div>
+    <!-- byclass name -->
+    <div class="container">
+      <button type="button" class="btn btn-dark" onclick="test()">Click me</button>
+      <p class="p">Hi</p>
+      <p class="p">Hello</p>
+      <p class="p">How are you?</p>
+    </div>
+    <!-- dblclick -->
+    <div class="container">
+      <h1>Double click</h1>
+      <button type="button" class="btn btn-dark" ondblclick="dblCli()">Db Click</button>
+      <h2 id="dbl"></h2>
+    </div>
+    <!-- onmouseover/onmouseout -->
+    <div class="container">
+      <h1 class="text-danger">onmouseover events</h1>
+      <img src="images/smiley.gif" alt="Smiley" onmouseover="bigImg(this)" onmouseout="norImg(this)">
+      <p class="text-info">Image over</p>
+    </div>
+    <!-- onmousedown/mouseout -->
+    <div class="container">
+      <h2 class="text-success">The onmousedown event</h2>
+      <h3 class="text-success">Click the text below:</h3>
+      <p onmousedown="msDown(this)" onmouseup="msUp(this)">Hello World!</p>
+    </div>
+    <!-- focus -->
+    <div class="container">
+      <h2>The focus event:</h2>
+      Enter your name: <input type="text" onfocus="onFocus(this)">
+    </div>
+    <!-- keyboard event -->
+    <div class="container">
+      <h1>The onkeydown event</h1>
+      <button type="button" class="btn btn-dark" onkeydown="keyDown()">click</button>
+      <h2 id="kd"></h2>
+    </div>
+    <!-- getElementsByTagName() Method -->
+    <div class="container">
+      <h1>getElementsByTagName() Method </h1>
+      <button type="button" class="btn btn-dark" onclick="test1()">Click me</button>
+      <p>Hi</p>
+      <p>Hello</p>
+      <p>How are you?</p>
+    </div>
+    <!-- byName -->
+    <div class="container">
+      <h2>The getElementsByName Method</h2>
+      <button type="button" class="btn btn-dark" onclick="byName()">Click me</button>
+      <p>First Name: <input name="firstname" type="text"></p>
+      <p id="bn1"></p>
+    </div>
+     <!-- query selector -->
+    <div class="container">
+      <h1>The querySelector() Method</h1>
+      <p>Hi</p>
+      <p>Hello</p>
+      <p>How are you?</p>
+      <button type="button" class="btn btn-dark" onclick="qSelect()">Click me</button>
+    </div>
+    <!-- query -->
+    <div class="container">
+      <h2>The querySelector() Method</h2>
+      <p class="se">I am a paragraph.</p>
+      <p class="se">I am a paragraph.</p> 
+      <button type="button" class="btn btn-info" onclick="test3()">red</button>
+    </div>
+     <!-- queryall -->
+    <div class="container">
+      <h2>The querySelectorAll() Method</h2>
+      <p class="se1">I am a paragraph.</p>
+      <p class="se1">I am a paragraph.</p> 
+      <button type="button" class="btn btn-info" onclick="test4()">red</button>
+    </div>
+    <!-- array -->
+    <div class="container">
+      <h2>Array</h2>
+      <button type="button" class="btn btn-info" onclick="arrayTest()">Array</button>
+      <p id="ar"></p>
+    </div>
+    <!-- array declare -->
+    <div class="container">
+      <h2>Array</h2>
+      <button type="button" class="btn btn-info" onclick="arrTest()">Array</button>
+      <p id="ary"></p>
+    </div>
+    <!-- if statement -->
+    <div class="container">
+      <h2>if statement</h2>
+      <h3>Good day!</h3>
+      <button type="button" class="btn btn-info" onclick="iState()">if</button>
+      <p id="ifs">Good Evening</p>
+    </div>
+    <!-- for loop -->
+    <div class="container">
+      <h2>for loop</h2>
+      <button type="button" class="btn btn-info" onclick="fLoop()">for</button>
+      <p id="fl"></p>
+    </div>
+    <!-- return -->
+    <div class="container">
+      <h2>Value return</h2>
+      <button type="button" class="btn btn-info" onclick="valueReturn()">Result</button>
+      <p id="ref"></p>
+    </div>
+    <!-- string \ -->
+    <div class="container">
+      <h2>The escape sequence \' inserts a single quote in a string</h2>
+      <button type="button" class="btn btn-info" onclick="stData()">Click</button>
+      <p id="es"></p>
+    </div>
+     <!-- string \n -->
+    <div class="container">
+      <h2>\n define new line</h2>
+      <button type="button" class="btn btn-info" onclick="strData()">Click</button>
+      <p id="est"></p>
+    </div>
+     <!-- string method -->
+    <div class="container">
+      <h2>String length</h2>
+      <button type="button" class="btn btn-info" onclick="strLenght()">Length</button>
+      <p id="sl"></p>
+    </div>
+     <!-- string method -->
+    <div class="container">
+      <h2>String slice</h2>
+      <button type="button" class="btn btn-info" onclick="strSlice()">Slice</button>
+      <p id="sli"></p>
+    </div>
+     <!-- string method -->
+    <div class="container">
+      <h2>String slice</h2>
+      <button type="button" class="btn btn-info" onclick="striSlice()">Slice</button>
+      <p id="slic"></p>
+    </div>
+    <!-- string method -->
+    <div class="container">
+      <h2>String replace</h2>
+      <button type="button" class="btn btn-info" onclick="striReplace()">Replace</button>
+      <p id="re">Please visit Microsoft.</p>
+    </div>
+    <!-- string method -->
+    <div class="container">
+      <h2>String uppercase</h2>
+      <button type="button" class="btn btn-info" onclick="striUpper()">Uppercase</button>
+      <p id="up">Please visit Microsoft.</p>
+    </div>
+    <!-- string concat -->
+    <div class="container">
+      <h2>String concat</h2>
+      <button type="button" class="btn btn-info" onclick="striCon()">concat</button>
+      <p id="con"></p>
+    </div>
+    <!-- number -->
+    <div class="container">
+      <h2>Maximum value</h2>
+      <button type="button" class="btn btn-info" onclick="maxValue()">Max value</button>
+      <p id="max"></p>
+    </div>
+    <!--min number -->
+    <div class="container">
+      <h2>Minimum value</h2>
+      <button type="button" class="btn btn-info" onclick="minValue()">Min value</button>
+      <p id="min"></p>
+    </div>
+    <!--exponential -->
+    <div class="container">
+      <h2>Exponential value</h2>
+      <button type="button" class="btn btn-info" onclick="expValue()">Exponential</button>
+      <p id="exp"></p>
+    </div>
+    <!-- js link -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
